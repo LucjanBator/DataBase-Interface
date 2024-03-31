@@ -52,7 +52,6 @@ namespace DataBaseInterface
             button9.Visible = true;
         }
 
-        // Metoda obsługująca kliknięcie przycisku 5
         private void button5_Click(object sender, EventArgs e)
         {
             button5.Visible = false;
@@ -100,7 +99,7 @@ namespace DataBaseInterface
                         {
                             inputs += "\n";
                         }
-                        if (count > 100) // Przerwij pętlę po wyświetleniu 1000 linii
+                        if (count > 100) // Przerwij pętlę po wyświetleniu 100 linii
                         {
                             inputs += $"\n\n(Pokaż tylko pierwsze 100 linii)";
                             break;
@@ -237,26 +236,6 @@ namespace DataBaseInterface
             }
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button4_Click(object sender, EventArgs e)
         {
             if (usedFinitiTable)
@@ -306,7 +285,6 @@ namespace DataBaseInterface
                 {
                     con.Open();
 
-                    // Zakładając, że "columnName1", "columnName2", itd. to rzeczywiste nazwy kolumn w twojej tabeli
                     string sqlQuery = "INSERT INTO datafiniti_fast_food_restaurants (id, dateAdded, dateUpdated, address, categories, city, country, klucze, latitude, longitude, name, postalCode, province, sourceURLs, websites) " +
                         "VALUES (@value1, @value2, @value3, @value4, @value5, @value6, @value7, @value8, @value9, @value10, @value11, @value12, @value13, @value14, @value15)";
 
@@ -330,7 +308,6 @@ namespace DataBaseInterface
                     cmd.Parameters.AddWithValue("@value15", column15Value);
 
 
-                    // Wykonaj zapytanie SQL
                     cmd.ExecuteNonQuery();
 
                     MessageBox.Show("Nowy rekord został dodany.");
@@ -350,7 +327,6 @@ namespace DataBaseInterface
                 {
                     con.Open();
 
-                    // Zakładając, że "columnName1", "columnName2", itd. to rzeczywiste nazwy kolumn w twojej tabeli
                     string sqlQuery = "INSERT INTO fastfoodrestaurants (address, city, country, klucze, latitude, longitude, name, postalCode, province, websites) " +
                         "VALUES (@value1, @value2, @value3, @value4, @value5, @value6, @value7, @value8, @value9, @value10)";
 
@@ -366,7 +342,6 @@ namespace DataBaseInterface
                     cmd.Parameters.AddWithValue("@value8", column8Value);
                     cmd.Parameters.AddWithValue("@value9", column9Value);
                     cmd.Parameters.AddWithValue("@value10", column10Value);
-                    // Wykonaj zapytanie SQL
                     cmd.ExecuteNonQuery();
 
                     MessageBox.Show("Nowy rekord został dodany.");
