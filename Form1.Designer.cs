@@ -162,7 +162,6 @@ namespace DataBaseInterface
             this.label1.Text = "Twoje opcje kolumn to\nid\ndateAdded\naddress\ncategories\ncity\ncountry\nklucze\nlatitude\nlongi" +
     "tude\nname\npostalCode\nprovince\nsourceURLs\nwebsites";
             this.label1.Visible = false;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -174,7 +173,6 @@ namespace DataBaseInterface
             this.label2.Text = "Twoje opcje kolumn to\naddress\ncity\ncountry\nklucze\nlatitude\nlongitude\nname\npostalCode\npro" +
     "vince\nwebsites";
             this.label2.Visible = false;
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -185,7 +183,6 @@ namespace DataBaseInterface
             this.label3.TabIndex = 11;
             this.label3.Text = "Wstaw do tabeli DataFiniti";
             this.label3.Visible = false;
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
@@ -196,7 +193,6 @@ namespace DataBaseInterface
             this.label4.TabIndex = 12;
             this.label4.Text = "Wstaw do tabeli FastFood";
             this.label4.Visible = false;
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // textBox2
             // 
